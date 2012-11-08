@@ -396,7 +396,7 @@ class Filesystem
      *
      * @return \Traversable
      */
-    private function toIterator($files)
+    protected function toIterator($files)
     {
         if (!$files instanceof \Traversable) {
             $files = new \ArrayObject(is_array($files) ? $files : array($files));
